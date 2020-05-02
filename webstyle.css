@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    background-color:#333;
+    animation: sky 5s linear infinite;
+    overflow-x:hidden;
+}
+
+.sun{
+    position:absolute;
+    left:10%;
+    bottom:5%;
+    height:10vw;
+    width:10vw;
+    background-color:darkred;
+    border-radius:50%;
+    animation:sun 5s linear infinite;
+}
+
+.grass{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:40vh;
+    background-color:darkolivegreen;
+    animation:grass 5s linear infinite;
+
+}
+
+@keyframes sky {
+    0%{
+        background-color:#444;
+    }
+    25%{
+        background-color:rgb(121, 82, 88);
+
+    }
+    50%{
+        background-color:lightblue;
+    }
+    75%%{
+        background-color:rgb(121, 82, 88);
+    }
+    100%{
+        background-color:#444;
+    }
+}
+
+@keyframes grass{
+    0%{
+        background-color:darkolivegreen;
+
+    }
+    25%{
+        background-color:green;
+    }
+    50%{
+        background-color:greenyellow;
+    }
+
+    75%{
+        background-color:green;
+    }
+    100%{
+        background-color:darkolivegreen;
+    }
+
+}
+
+@keyframes sun{
+    0%{
+        left:-30%;
+        bottom:5%;
+        background-color:darkred;
+    }
+    20%{
+       
+
+    }
+    50%{
+        bottom:70%;
+        background-color:yellow;
+
+    }
+    70%{
+        
+    }
+    100%{
+        left:130%;
+        bottom:5%;
+        background-color:darkred;
+    }
+}
